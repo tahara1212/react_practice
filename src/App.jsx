@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ColorfulMessage from "./Components/ColorfulMessage";
+// #default exportではない場合は、分割代入で受け取る。
+// #default exportで受け取る場合は、単なる変数宣言となる為、ファイル名が異なっていた場合も処理は行われる。
+import { ColorfulMessage } from "./Components/ColorfulMessage";
 
 const App = () => {
   // #コンポーネント内で動的に値が切り替わる場合は、stateを使用する。

@@ -2,7 +2,7 @@ import React from "react";
 
 // #メッセージをコンポーネント化。
 // #引数で取得した値をcssに割り当てる。
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
   // #分割代入で取得した値を変数化する。
   const { color, message } = props;
 
@@ -23,4 +23,4 @@ const ColorfulMessage = (props) => {
   return <p style={contentStyle}>{message}</p>;
 };
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
