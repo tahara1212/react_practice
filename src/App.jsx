@@ -31,7 +31,7 @@ const App = () => {
       faceShowFlg || setFaceShowFlg(true);
     } else {
       // #アンパサンドは左がtrueの場合に右を実行する。
-      // #右がfalseの場合、左の処理は実行されない。
+      // #左がfalseの場合、右の処理は実行されない。
       faceShowFlg && setFaceShowFlg(false);
     }
     // #第二引数に配列を設定し、参照する値を決定する。
